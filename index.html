@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morty Grid</title>
+    <style>
+      body {
+        width: 60%;
+        height: 400px;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 200px 200px 200px;
+        grid-template-areas:
+          
+          "morty1 morty2 morty3"
+          "morty4 morty5 morty6";
+      }
+     
+      
+      
+      .morty1 {
+        grid-area: morty1;
+        background-color: #0e0e0e;
+        
+      }
+
+      .morty11 {
+        height: 140px;
+        margin-top:50px;
+        margin-left: 20px;
+        border-radius: 10px;
+        display: flex;
+        background-color: rgb(51, 54, 59);
+      }
+      .morty21 {
+        height: 140px;
+        margin-top:50px;
+        margin-left: 10px;
+        border-radius: 10px;
+        display: flex;
+        background-color: rgb(51, 54, 59);
+      }
+      .morty31 {
+        height: 140px;
+        margin-top:50px;
+        margin-left: 10px;
+        margin-right: 20px;
+        border-radius: 10px;
+        display: flex;
+        background-color: rgb(51, 54, 59);
+      }
+      .morty41 {
+        height: 140px;
+        margin-top:10px;
+        margin-left: 20px;
+        border-radius: 10px;
+        display: flex;
+        background-color: rgb(51, 54, 59);
+      }
+      .morty51 {
+        height: 140px;
+        margin-top:10px;
+        margin-left: 10px;
+        border-radius: 10px;
+        display: flex;
+        background-color: rgb(51, 54, 59);
+      }
+      .morty61 {
+        height: 140px;
+        margin-top:10px;
+        margin-left: 10px;
+        margin-right: 20px;
+        border-radius: 10px;
+        display: flex;
+        background-color: rgb(51, 54, 59);
+      }
+      .container {
+        width: 200px;
+        height: 160px;
+        padding:0 10px 10px 10px;
+        margin:0 0 0 8px;
+      }
+      .morty2 {
+        grid-area: morty2;
+        background-color: #0e0e0e;
+      }
+      .morty3 {
+        grid-area: morty3;
+        background-color: #0e0e0e;
+      }
+      .morty4 {
+        grid-area: morty4;
+        background-color: #0e0e0e;
+      }
+      .morty5 {
+        grid-area: morty5;
+        background-color: #0e0e0e;
+      }
+      .morty6 {
+        grid-area: morty6;
+        background-color: #0e0e0e;
+      }
+
+      .mortys {
+        width: auto;
+        border-radius: 10px 0px 0px 10px;
+      }
+
+      h3 {
+        color: white;
+        margin:0 0 3px 0;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .puntito{
+        margin-bottom: 20px;
+        
+      }
+      .location{
+        margin-bottom: 20px;
+      }
+      .place{
+        margin-bottom: 20px;
+      }
+      .botonRed{
+        width: 1px;
+        border: solid;
+        border-color: red;
+        background-color: red;
+        border-radius: 100%;
+        margin-right: 5px;
+        height: 1px;
+        padding:1px;
+        display: flex;
+        
+      }
+      .botonGreen{
+        width: 1px;
+        border: solid;
+        border-color: green;
+        background-color: green;
+        border-radius: 100%;
+        margin-right: 5px;
+        height: 1px;
+        padding:1px;
+        display: flex;
+        
+      }
+      .row{
+        display: flex;
+        align-items: center;
+
+      }
+      .status {
+        color: white;
+        margin:0px;
+        font-size: 9px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .gris {
+        color: grey;
+        margin:0 0 3px 0;
+        font-size: 9px;
+        font-family: Arial, Helvetica, sans-serif;
+
+      }
+      .blanco {
+        color: white;
+        margin:0px;
+        font-size: 9px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+
+    <section class="morty1">
+      <section class="morty11">
+        <img
+          src="https://rickandmortyapi.com/api/character/avatar/2.jpeg"
+          class="mortys"
+        />
+        <section class="container">
+          <section class="puntito">
+            <h3>Morty</h3>
+            <p class="status row" ><label class="botonRed"></label> Dead-Alien </p>
+          </section>
+          <section class="location">
+            <p class="gris">Last known location:</p>
+            <p class="blanco">Interdimensional Customs</p>
+          </section>
+          <section class="place">
+            <p class="gris">First seeen in:</p>
+            <p class="blanco">Pilot</p>
+          </section>
+        </section>
+      </section>
+    </section>
+    <section class="morty2">
+      <section class="morty21">
+        <img
+        src="https://rickandmortyapi.com/api/character/avatar/2.jpeg"
+        class="mortys"
+      />
+      <section class="container">
+        <section class="puntito">
+          <h3>Pat Gueterman</h3>
+          <p class="status row" ><label class="botonRed"></label> Dead-Robot </p>
+        </section>
+        <section class="location">
+          <p class="gris">Last known location:</p>
+          <p class="blanco">Planet Squanch</p>
+        </section>
+        <section class="place">
+          <p class="gris">First seeen in:</p>
+          <p class="blanco">The Weeding Squanchers</p>
+        </section>
+      </section>
+      </section>
+    </section>
+    <section class="morty3">
+      <section class="morty31">
+        <img
+        src="https://rickandmortyapi.com/api/character/avatar/2.jpeg"
+        class="mortys"
+      />
+      <section class="container">
+        <section class="puntito">
+          <h3>Scrotian</h3>
+          <p class="status row" ><label class="botonGreen"></label> Alive-Animal </p>
+        </section>
+        <section class="location">
+          <p class="gris">Last known location:</p>
+          <p class="blanco">Signus 5 Expanse</p>
+        </section>
+        <section class="place">
+          <p class="gris">First seeen in:</p>
+          <p class="blanco">Mortynight Run</p>
+        </section>
+      </section>
+      </section>
+    </section>
+    <section class="morty4">
+      <section class="morty41">
+        <img
+        src="https://rickandmortyapi.com/api/character/avatar/2.jpeg"
+        class="mortys"
+      />
+      <section class="container">
+        <section class="puntito">
+          <h3>Uncle Steve</h3>
+          <p class="status row" ><label class="botonRed"></label> Dead-Alien </p>
+        </section>
+        <section class="location">
+          <p class="gris">Last known location:</p>
+          <p class="blanco">Earth (Replacement Dimension)</p>
+        </section>
+        <section class="place">
+          <p class="gris">First seeen in:</p>
+          <p class="blanco">Total Rickall</p>
+        </section>
+      </section>
+      </section>
+    </section>
+    <section class="morty5">
+      <section class="morty51">
+        <img
+        src="https://rickandmortyapi.com/api/character/avatar/2.jpeg"
+        class="mortys"
+      />
+      <section class="container">
+        <section class="puntito">
+          <h3>Running Bird</h3>
+          <p class="status row" ><label class="botonGreen"></label> Alive-Human </p>
+        </section>
+        <section class="location">
+          <p class="gris">Last known location:</p>
+          <p class="blanco">Earth (Replacement Dimension)</p>
+        </section>
+        <section class="place">
+          <p class="gris">First seeen in:</p>
+          <p class="blanco">The Old Man and the Seat</p>
+        </section>
+      </section>
+      </section>
+    </section>
+    <section class="morty6">
+      <section class="morty61">
+        <img
+        src="https://rickandmortyapi.com/api/character/avatar/2.jpeg"
+        class="mortys"
+      />
+      <section class="container">
+        <section class="puntito">
+          <h3>Leah</h3>
+          <p class="status row" ><label class="botonGreen"></label> Alive-Unknown </p>
+        </section>
+        <section class="location">
+          <p class="gris">Last known location:</p>
+          <p class="blanco">Story Train</p>
+        </section>
+        <section class="place">
+          <p class="gris">First seeen in:</p>
+          <p class="blanco">Never Ricking Morty</p>
+        </section>
+      </section>
+      </section>
+    </section>
+  </body>
+</html>
